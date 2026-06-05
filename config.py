@@ -7,7 +7,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DATA_DIR = "./dataset"
 NUM_CLASSES = 10
 INPUT_DIM = 28 * 28  # Fashion-MNIST flattened
-BATCH_SIZE = 256
+BATCH_SIZE = 512
 VAL_RATIO = 0.15  # 15% of training set used for validation
 
 # ── Genetic Algorithm ─────────────────────────────────────────────────────────

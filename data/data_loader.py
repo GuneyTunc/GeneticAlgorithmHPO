@@ -33,8 +33,9 @@ def get_dataloaders():
 
     loader_kwargs = dict(
         batch_size=config.BATCH_SIZE,
-        num_workers=0,
+        num_workers=4,
         pin_memory=torch.cuda.is_available(),
+        persistent_workers=True,
     )
 
     train_loader = DataLoader(train_set, shuffle=True, **loader_kwargs)

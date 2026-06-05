@@ -1,0 +1,379 @@
+{
+  "champions": {
+    "Performance": {
+      "hparams": {
+        "num_layers": 2,
+        "neurons": 512,
+        "lr": 0.000939,
+        "activation": "relu",
+        "dropout": 0.105
+      },
+      "validation": {
+        "success": {
+          "accuracy": 0.8745555555555555,
+          "balanced_accuracy": 0.8762979862779765,
+          "precision_macro": 0.8754348594066015,
+          "precision_micro": 0.8745555555555555,
+          "precision_weighted": 0.8752586308709699,
+          "recall_macro": 0.8762979862779765,
+          "recall_micro": 0.8745555555555555,
+          "recall_weighted": 0.8745555555555555,
+          "f1_macro": 0.8742510291998478,
+          "f1_micro": 0.8745555555555555,
+          "f1_weighted": 0.873314081237313,
+          "jaccard_macro": 0.787735326782577,
+          "cohen_kappa": 0.8606176013371493,
+          "matthews_corrcoef": 0.8610057951672836,
+          "roc_auc_ovr_macro": 0.9907800018510541,
+          "param_count": 669706,
+          "inference_ms_per_batch": 9.605099996810573,
+          "inference_ms_per_sample": 0.01875996093127065
+        },
+        "error": {
+          "error_rate": 0.12544444444444447,
+          "misclassification_rate": 0.12544444444444447,
+          "top1_error_rate": 0.12544444444444447,
+          "zero_one_loss": 0.12544444444444447,
+          "hamming_loss": 0.12544444444444444,
+          "log_loss": 0.3415137276382956,
+          "brier_score_macro": 0.017697331635281442,
+          "macro_false_positive_rate": 0.013938607982818948,
+          "macro_false_negative_rate": 0.1237020137220235,
+          "misclassified_count": 1129,
+          "total_samples": 9000,
+          "correct_count": 7871,
+          "per_class_error": {
+            "T-shirt/top": {
+              "error_rate": 0.19999999999999996,
+              "misclassified": 194,
+              "support": 970
+            },
+            "Trouser": {
+              "error_rate": 0.01941747572815533,
+              "misclassified": 18,
+              "support": 927
+            },
+            "Pullover": {
+              "error_rate": 0.24382022471910114,
+              "misclassified": 217,
+              "support": 890
+            },
+            "Dress": {
+              "error_rate": 0.07109557109557108,
+              "misclassified": 61,
+              "support": 858
+            },
+            "Coat": {
+              "error_rate": 0.12658227848101267,
+              "misclassified": 110,
+              "support": 869
+            },
+            "Sandal": {
+              "error_rate": 0.04372197309417036,
+              "misclassified": 39,
+              "support": 892
+            },
+            "Shirt": {
+              "error_rate": 0.3609341825902336,
+              "misclassified": 340,
+              "support": 942
+            },
+            "Sneaker": {
+              "error_rate": 0.08413461538461542,
+              "misclassified": 70,
+              "support": 832
+            },
+            "Bag": {
+              "error_rate": 0.03276836158192087,
+              "misclassified": 29,
+              "support": 885
+            },
+            "Ankle boot": {
+              "error_rate": 0.054545454545454564,
+              "misclassified": 51,
+              "support": 935
+            }
+          }
+        },
+        "classification_report": "              precision    recall  f1-score   support\n\n T-shirt/top       0.83      0.80      0.81       970\n     Trouser       0.99      0.98      0.98       927\n    Pullover       0.86      0.76      0.80       890\n       Dress       0.80      0.93      0.86       858\n        Coat       0.76      0.87      0.81       869\n      Sandal       0.94      0.96      0.95       892\n       Shirt       0.74      0.64      0.68       942\n     Sneaker       0.93      0.92      0.92       832\n         Bag       0.96      0.97      0.97       885\n  Ankle boot       0.95      0.95      0.95       935\n\n    accuracy                           0.87      9000\n   macro avg       0.88      0.88      0.87      9000\nweighted avg       0.88      0.87      0.87      9000\n"
+      },
+      "test": {
+        "success": {
+          "accuracy": 0.8732,
+          "balanced_accuracy": 0.8732,
+          "precision_macro": 0.8738767027941542,
+          "precision_micro": 0.8732,
+          "precision_weighted": 0.8738767027941542,
+          "recall_macro": 0.8732,
+          "recall_micro": 0.8732,
+          "recall_weighted": 0.8732,
+          "f1_macro": 0.872268188940374,
+          "f1_micro": 0.8732,
+          "f1_weighted": 0.8722681889403741,
+          "jaccard_macro": 0.7846689237132115,
+          "cohen_kappa": 0.859111111111111,
+          "matthews_corrcoef": 0.8594249349029291,
+          "roc_auc_ovr_macro": 0.9896323222222222,
+          "param_count": 669706,
+          "inference_ms_per_batch": 2.1358550031436607,
+          "inference_ms_per_sample": 0.004171591803014962
+        },
+        "error": {
+          "error_rate": 0.12680000000000002,
+          "misclassification_rate": 0.12680000000000002,
+          "top1_error_rate": 0.12680000000000002,
+          "zero_one_loss": 0.12680000000000002,
+          "hamming_loss": 0.1268,
+          "log_loss": 0.35564231387663503,
+          "brier_score_macro": 0.01851527236867696,
+          "macro_false_positive_rate": 0.01408888888888889,
+          "macro_false_negative_rate": 0.1268,
+          "misclassified_count": 1268,
+          "total_samples": 10000,
+          "correct_count": 8732,
+          "per_class_error": {
+            "T-shirt/top": {
+              "error_rate": 0.20199999999999996,
+              "misclassified": 202,
+              "support": 1000
+            },
+            "Trouser": {
+              "error_rate": 0.030000000000000027,
+              "misclassified": 30,
+              "support": 1000
+            },
+            "Pullover": {
+              "error_rate": 0.24,
+              "misclassified": 240,
+              "support": 1000
+            },
+            "Dress": {
+              "error_rate": 0.08399999999999996,
+              "misclassified": 84,
+              "support": 1000
+            },
+            "Coat": {
+              "error_rate": 0.14700000000000002,
+              "misclassified": 147,
+              "support": 1000
+            },
+            "Sandal": {
+              "error_rate": 0.04400000000000004,
+              "misclassified": 44,
+              "support": 1000
+            },
+            "Shirt": {
+              "error_rate": 0.355,
+              "misclassified": 355,
+              "support": 1000
+            },
+            "Sneaker": {
+              "error_rate": 0.08699999999999997,
+              "misclassified": 87,
+              "support": 1000
+            },
+            "Bag": {
+              "error_rate": 0.027000000000000024,
+              "misclassified": 27,
+              "support": 1000
+            },
+            "Ankle boot": {
+              "error_rate": 0.052000000000000046,
+              "misclassified": 52,
+              "support": 1000
+            }
+          }
+        },
+        "classification_report": "              precision    recall  f1-score   support\n\n T-shirt/top       0.85      0.80      0.82      1000\n     Trouser       0.99      0.97      0.98      1000\n    Pullover       0.84      0.76      0.80      1000\n       Dress       0.80      0.92      0.86      1000\n        Coat       0.75      0.85      0.80      1000\n      Sandal       0.93      0.96      0.94      1000\n       Shirt       0.73      0.65      0.68      1000\n     Sneaker       0.94      0.91      0.93      1000\n         Bag       0.96      0.97      0.97      1000\n  Ankle boot       0.95      0.95      0.95      1000\n\n    accuracy                           0.87     10000\n   macro avg       0.87      0.87      0.87     10000\nweighted avg       0.87      0.87      0.87     10000\n"
+      }
+    },
+    "Efficiency": {
+      "hparams": {
+        "num_layers": 1,
+        "neurons": 16,
+        "lr": 0.002247,
+        "activation": "elu",
+        "dropout": 0.0
+      },
+      "validation": {
+        "success": {
+          "accuracy": 0.8554444444444445,
+          "balanced_accuracy": 0.8569758871831421,
+          "precision_macro": 0.8549418647988466,
+          "precision_micro": 0.8554444444444445,
+          "precision_weighted": 0.8544656158955297,
+          "recall_macro": 0.8569758871831421,
+          "recall_micro": 0.8554444444444445,
+          "recall_weighted": 0.8554444444444445,
+          "f1_macro": 0.8552916931604535,
+          "f1_micro": 0.8554444444444445,
+          "f1_weighted": 0.8542755650213439,
+          "jaccard_macro": 0.759651894855661,
+          "cohen_kappa": 0.8393704187422085,
+          "matthews_corrcoef": 0.8395391237768441,
+          "roc_auc_ovr_macro": 0.9859134588377874,
+          "param_count": 12730,
+          "inference_ms_per_batch": 1.8078777809730833,
+          "inference_ms_per_sample": 0.0035310112909630533
+        },
+        "error": {
+          "error_rate": 0.14455555555555555,
+          "misclassification_rate": 0.14455555555555555,
+          "top1_error_rate": 0.14455555555555555,
+          "zero_one_loss": 0.14455555555555555,
+          "hamming_loss": 0.14455555555555555,
+          "log_loss": 0.41955494634827556,
+          "brier_score_macro": 0.02113926620222628,
+          "macro_false_positive_rate": 0.016068458717930632,
+          "macro_false_negative_rate": 0.1430241128168578,
+          "misclassified_count": 1301,
+          "total_samples": 9000,
+          "correct_count": 7699,
+          "per_class_error": {
+            "T-shirt/top": {
+              "error_rate": 0.17835051546391756,
+              "misclassified": 173,
+              "support": 970
+            },
+            "Trouser": {
+              "error_rate": 0.029126213592232997,
+              "misclassified": 27,
+              "support": 927
+            },
+            "Pullover": {
+              "error_rate": 0.21573033707865163,
+              "misclassified": 192,
+              "support": 890
+            },
+            "Dress": {
+              "error_rate": 0.11188811188811187,
+              "misclassified": 96,
+              "support": 858
+            },
+            "Coat": {
+              "error_rate": 0.19102416570770997,
+              "misclassified": 166,
+              "support": 869
+            },
+            "Sandal": {
+              "error_rate": 0.0829596412556054,
+              "misclassified": 74,
+              "support": 892
+            },
+            "Shirt": {
+              "error_rate": 0.4118895966029724,
+              "misclassified": 388,
+              "support": 942
+            },
+            "Sneaker": {
+              "error_rate": 0.07451923076923073,
+              "misclassified": 62,
+              "support": 832
+            },
+            "Bag": {
+              "error_rate": 0.059887005649717495,
+              "misclassified": 53,
+              "support": 885
+            },
+            "Ankle boot": {
+              "error_rate": 0.07486631016042777,
+              "misclassified": 70,
+              "support": 935
+            }
+          }
+        },
+        "classification_report": "              precision    recall  f1-score   support\n\n T-shirt/top       0.79      0.82      0.81       970\n     Trouser       0.98      0.97      0.98       927\n    Pullover       0.76      0.78      0.77       890\n       Dress       0.83      0.89      0.86       858\n        Coat       0.77      0.81      0.79       869\n      Sandal       0.93      0.92      0.92       892\n       Shirt       0.69      0.59      0.64       942\n     Sneaker       0.89      0.93      0.91       832\n         Bag       0.96      0.94      0.95       885\n  Ankle boot       0.94      0.93      0.93       935\n\n    accuracy                           0.86      9000\n   macro avg       0.85      0.86      0.86      9000\nweighted avg       0.85      0.86      0.85      9000\n"
+      },
+      "test": {
+        "success": {
+          "accuracy": 0.845,
+          "balanced_accuracy": 0.8450000000000001,
+          "precision_macro": 0.844360136614009,
+          "precision_micro": 0.845,
+          "precision_weighted": 0.844360136614009,
+          "recall_macro": 0.8450000000000001,
+          "recall_micro": 0.845,
+          "recall_weighted": 0.845,
+          "f1_macro": 0.844322647706257,
+          "f1_micro": 0.845,
+          "f1_weighted": 0.8443226477062568,
+          "jaccard_macro": 0.7450586012827142,
+          "cohen_kappa": 0.8277777777777777,
+          "matthews_corrcoef": 0.8278677534949677,
+          "roc_auc_ovr_macro": 0.9845513444444445,
+          "param_count": 12730,
+          "inference_ms_per_batch": 1.774380009737797,
+          "inference_ms_per_sample": 0.003465585956519135
+        },
+        "error": {
+          "error_rate": 0.15500000000000003,
+          "misclassification_rate": 0.15500000000000003,
+          "top1_error_rate": 0.15500000000000003,
+          "zero_one_loss": 0.15500000000000003,
+          "hamming_loss": 0.155,
+          "log_loss": 0.43335409029009125,
+          "brier_score_macro": 0.022088524838909506,
+          "macro_false_positive_rate": 0.017222222222222222,
+          "macro_false_negative_rate": 0.155,
+          "misclassified_count": 1550,
+          "total_samples": 10000,
+          "correct_count": 8450,
+          "per_class_error": {
+            "T-shirt/top": {
+              "error_rate": 0.19199999999999995,
+              "misclassified": 192,
+              "support": 1000
+            },
+            "Trouser": {
+              "error_rate": 0.04400000000000004,
+              "misclassified": 44,
+              "support": 1000
+            },
+            "Pullover": {
+              "error_rate": 0.235,
+              "misclassified": 235,
+              "support": 1000
+            },
+            "Dress": {
+              "error_rate": 0.129,
+              "misclassified": 129,
+              "support": 1000
+            },
+            "Coat": {
+              "error_rate": 0.239,
+              "misclassified": 239,
+              "support": 1000
+            },
+            "Sandal": {
+              "error_rate": 0.08399999999999996,
+              "misclassified": 84,
+              "support": 1000
+            },
+            "Shirt": {
+              "error_rate": 0.42200000000000004,
+              "misclassified": 422,
+              "support": 1000
+            },
+            "Sneaker": {
+              "error_rate": 0.07099999999999995,
+              "misclassified": 71,
+              "support": 1000
+            },
+            "Bag": {
+              "error_rate": 0.06399999999999995,
+              "misclassified": 64,
+              "support": 1000
+            },
+            "Ankle boot": {
+              "error_rate": 0.06999999999999995,
+              "misclassified": 70,
+              "support": 1000
+            }
+          }
+        },
+        "classification_report": "              precision    recall  f1-score   support\n\n T-shirt/top       0.81      0.81      0.81      1000\n     Trouser       0.98      0.96      0.97      1000\n    Pullover       0.72      0.77      0.74      1000\n       Dress       0.83      0.87      0.85      1000\n        Coat       0.75      0.76      0.76      1000\n      Sandal       0.92      0.92      0.92      1000\n       Shirt       0.65      0.58      0.61      1000\n     Sneaker       0.90      0.93      0.91      1000\n         Bag       0.96      0.94      0.95      1000\n  Ankle boot       0.94      0.93      0.93      1000\n\n    accuracy                           0.84     10000\n   macro avg       0.84      0.85      0.84     10000\nweighted avg       0.84      0.84      0.84     10000\n"
+      }
+    }
+  },
+  "ga_fitness_note": "GA fitness F1 (validation, stored during evolution): Performance=0.8852, Efficiency=0.8562"
+}

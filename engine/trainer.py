@@ -26,11 +26,12 @@ def train_and_evaluate(model: nn.Module, train_loader, val_loader):
     criterion = nn.CrossEntropyLoss()
 
     # ── Training ──────────────────────────────────────────────────────────
+    non_block = device.type == "cuda"
     model.train()
     for _ in range(config.FITNESS_EPOCHS):
         for images, labels in train_loader:
-            images = images.view(images.size(0), -1).to(device)
-            labels = labels.to(device)
+            images = images.view(images.size(0), -1).to(device, non_blocking=non_block)
+            labels = labels.to(device, non_blocking=non_block)
 
             optimizer.zero_grad()
             outputs = model(images)
@@ -45,7 +46,7 @@ def train_and_evaluate(model: nn.Module, train_loader, val_loader):
 
     with torch.no_grad():
         for images, labels in val_loader:
-            images = images.view(images.size(0), -1).to(device)
+            images = images.view(images.size(0), -1).to(device, non_blocking=non_block)
 
             start = time.perf_counter()
             outputs = model(images)
